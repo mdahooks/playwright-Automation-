@@ -1,0 +1,13 @@
+{
+  "name": "playwright-demo",
+  "version": "1.0.0",
+  "description": "Playwright Testing Demo",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0"
+  }
+}
