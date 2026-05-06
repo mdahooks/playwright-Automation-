@@ -1,12 +1,15 @@
 pipeline {
     agent any
+    environment {
+        PLAYWRIGHT_BROWSERS_PATH = "0"
+    }
     stages {
         stage('Install Dependencies') {
             steps {
                 bat 'npm install'
             }
         }
-        stage('Install Playwright Browsers') {
+        stage('Install Browsers') {
             steps {
                 bat 'npx playwright install'
             }
